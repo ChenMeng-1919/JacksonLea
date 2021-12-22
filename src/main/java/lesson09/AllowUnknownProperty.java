@@ -19,6 +19,6 @@ public class AllowUnknownProperty {
         mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES); // 禁用
 
         Animal animal = mapper.readValue(jsonString, Animal.class);
-        System.out.println(mapper.writeValueAsString(animal));
+        log.info(mapper.writeValueAsString(animal));
     }
 }
