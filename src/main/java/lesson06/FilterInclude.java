@@ -28,6 +28,6 @@ public class FilterInclude {
         // 将上面的过滤器和ID为myFilter的注解进行关联
         FilterProvider filters = new SimpleFilterProvider().addFilter("myFilter", filter);
 
-        System.out.println(mapper.writer(filters).writeValueAsString(animal));
+        log.info(mapper.writer(filters).writeValueAsString(animal));
     }
 }
